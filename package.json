@@ -1,6 +1,6 @@
 {
-  "name": "mochawesome-report-generator",
-  "version": "6.2.0",
+  "name": "@KnoxMed/mochawesome-report-generator",
+  "version": "1.0.0",
   "description": "Generates gorgeous HTML reports from mochawesome reporter.",
   "scripts": {
     "lint": "eslint src test --ext js",
@@ -23,11 +23,11 @@
     "dev": "npm run compile && npm run cli && npm run devserver",
     "dev:cli": "nodemon --watch src/bin --watch src/lib --exec npm run compile"
   },
-  "author": "Adam Gruber",
+  "author": "KnoxMed",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adamgruber/mochawesome-report-generator"
+    "url": "https://github.com/KnoxMed/mochawesome-report-generator"
   },
   "keywords": [
     "mochawesome",
