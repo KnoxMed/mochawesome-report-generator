@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { reaction } from 'mobx';
 import { inject, observer } from 'mobx-react';
 import { Suite } from 'components/suite';
-import cx from 'classnames';
 
 @inject('reportStore')
 @observer
@@ -52,7 +51,8 @@ class ReportBody extends React.Component {
     } = this.props.reportStore;
 
     return (
-      <div id="details" className={cx('details', 'container')}>
+      <div id="details">
+        <h2>Dasher VnV Report</h2>
         {suites.map(suite => (
           <Suite
             key={suite.uuid}

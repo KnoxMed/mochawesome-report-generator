@@ -157,7 +157,6 @@ class TestContext extends Component {
     const { title, value } = ctx;
     return (
       <div {...containerProps}>
-        <h4 className={cx('context-item-title')}>{title}:</h4>
         {this.renderContextContent(value, title, true)}
       </div>
     );
